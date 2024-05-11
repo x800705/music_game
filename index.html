@@ -1,0 +1,71 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+
+
+
+    <body id="body">
+        
+        <div id="game-area"></div>
+
+        <button onclick="start()">开始</button>
+        <div class="combo" id="combo"></div> 
+        <div class="charge" id="charge"></div>
+
+        <audio src="doom.mp3" id="myau"></audio>
+        <audio src="music.mp4" id="music"></audio>
+
+    </body>
+
+
+
+    <script src="game.js"></script>
+
+    <script>
+  
+        //setInterval(gameLoop,500)
+
+       // var intervalId = setInterval(gameLoop, 1000); // 第二个参数是时间间隔，以毫秒为单位，这里是1000毫秒（1秒） 
+
+
+
+       var broad = document.createElement('div'); 
+
+       broad.className = 'board';
+
+       document.getElementById('game-area').appendChild(broad);
+
+       broad.style.left = "30px"
+
+      var mouseX = ""
+      var mouseY = ""
+
+
+    // 监听鼠标移动事件  
+        document.addEventListener('mousemove', function(event) {  
+        
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+        //console.log(mouseX, mouseY);
+        broad.style.left = mouseX - 160 +  "px";
+        broad.style.top = "700px";
+    
+    
+  });  
+
+
+
+
+  
+
+      
+       
+        
+
+    
+    </script>
+
+
+</html>

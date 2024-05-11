@@ -1,0 +1,44 @@
+.note{
+    width: 40px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    transition: 0.1s;
+    margin:10px
+
+}
+
+
+.board{
+    width: 300px;
+    height: 80px;
+    background-color: skyblue;
+    position: absolute;
+  
+
+    
+    
+}
+
+.combo{
+
+    position: absolute;
+    top:40px;
+    left:10px;
+    transition: 0.1s;
+    display: inline;
+}
+
+.charge{
+
+    position: absolute;
+    top:80px;
+    left:10px;
+    transition: 0.1s;
+    display: inline;
+}
+
+.combos{
+    position: absolute;
+    transition: 0.1s;
+}
